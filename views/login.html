@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+<script src="/js/login.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="495824670063-jr9li8v0tn6ljlr1gc4qko0mq33p11pq.apps.googleusercontent.com">
+
+<body>
+
+<div ng-app="loginApp" ng-controller="loginCtrl">
+    Email ID: <input type="text" ng-model="emailId" />
+    Password: <input type="password" ng-model="password" />
+   <button ng-click="login()">Login</button>
+   {{welcome}}
+</div>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+
+</body>
+</html>
